@@ -1,6 +1,6 @@
 <template>
   <div class="tamagotchi">
-    <img src="~/assets/egg.png" alt="Tamagotchi" class="img" />
+    <img src="~/assets/mijinko.png" alt="Tamagotchi" class="img" />
   </div>
 </template>
 
