@@ -1,70 +1,44 @@
 # cuddle-pet-front
 
-## Build Setup
+# CuddlePet
 
-```bash
-# install dependencies
-$ npm install
+### 由来
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+"Cuddle"は抱きしめることや愛情を込めることを意味し、"Pet"はペットを指します。この名前は、ペットとの触れ合いや愛情の表現を重視したアプリケーションを想起させます。
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+**仕様書**
 
-# generate static project
-$ npm run generate
-```
+1. ユーザー登録
+    - ユーザー名、パスワードを入力して新規アカウントを作成する機能。
+    - 登録したユーザー情報はデータベースに保存される。
+2. ログイン・ログアウト
+    - 登録済みのユーザーがユーザー名とパスワードでログインする機能。
+    - ログイン状態を保持し、セッション管理を行う。
+    - ログアウト機能を提供する。
+3. たまごっちの孵化
+    - ログイン後、たまごっちの卵が表示される。
+    - 一定時間が経過するとたまごっちが孵化する。
+4. たまごっちの世話
+    - たまごっちの食事、遊び、清掃などの基本的な世話を行う機能。
+    - たまごっちの健康や幸福度を管理し、適切なケアを提供する。
+    - たまごっちの成長や進化を観察できる。
+5. アクセサリーやコスチューム機能
+    - ユーザーはたまごっちにアクセサリーやコスチュームを着せることができます。
+    - アクセサリーやコスチュームは、ゲーム内通貨や特定の条件を満たすことで入手できます。
+    - ユーザーは自分のたまごっちの個性をカスタマイズするために、様々なアクセサリーやコスチュームを試すことができます。
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+**UIデザインの考え方**
 
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
-# cuddle-pet-front
+1. ログイン画面:
+    - ユーザー名とパスワードの入力フォーム
+    - ログインボタンや新規登録へのリンク
+2. たまごっち孵化画面:
+    - たまごっちの卵が表示される
+    - 孵化までのカウントダウンやアニメーション
+3. たまごっち世話画面:
+    - たまごっちのステータスやアイコン表示
+    - 餌を与える、遊ぶ、掃除するなどのアクションボタン
+    - たまごっちの表情や反応のアニメーション
+4. アクセサリーやコスチューム画面:
+    - アクセサリーやコスチュームの一覧表示
+    - 選択や着せ替えのためのUI要素
