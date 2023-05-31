@@ -7,12 +7,13 @@
       <Tamagotchi />
     </div>
     <div class="actions">
-      <button class="action-button feed-button" @click="feed">餌を与える</button>
-      <button class="action-button play-button" @click="play">遊ぶ</button>
-      <button class="action-button clean-button" @click="clean">掃除する</button>
-    </div>
     <div>
+        <p>元気ゲージ:</p>
         <HealthBar :health="pokemonHealth" />
+    </div>
+    <button class="action-button feed-button" @click="feed">餌を与える</button>
+    <button class="action-button play-button" @click="play">遊ぶ</button>
+    <button class="action-button clean-button" @click="clean">掃除する</button>
     </div>
   </div>
 </template>
